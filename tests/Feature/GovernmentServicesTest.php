@@ -13,7 +13,7 @@ test('can fetch all citizens', function () {
 
     $response->assertStatus(200)
              ->assertJsonStructure([
-                 '*' => ['id', 'name', 'address'], // Removed 'national_id' and 'birth_date'
+                 '*' => ['id', 'name', 'address'], 
              ]);
 });
 
